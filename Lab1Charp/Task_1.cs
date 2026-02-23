@@ -1,18 +1,19 @@
 namespace Lab1Charp;
 using System;
 
-public class Task_1
+public static class Task1
 {
-    static void main()
+    // було: static void main()
+    public static void Run()
     {
-        Console.Write("Введіть координату (a)");
+        Console.Write("Введіть координату (a): ");
         double a = double.Parse(Console.ReadLine());
-        Console.Write("Введіть координату (b)");
+        Console.Write("Введіть координату (b): ");
         double b = double.Parse(Console.ReadLine());
-        
-        Console.Write("Введіть координату (c)");
+
+        Console.Write("Введіть координату (c): ");
         double c = double.Parse(Console.ReadLine());
-        Console.Write("Введіть координату (d)");
+        Console.Write("Введіть координату (d): ");
         double d = double.Parse(Console.ReadLine());
 
         double deltaX = c - a;
@@ -21,9 +22,8 @@ public class Task_1
         double Delta = Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2);
 
         double distance = Math.Sqrt(Delta);
-        
-        Console.WriteLine($"Відстань становить {distance:F2}");
 
+        Console.WriteLine($"Відстань становить {distance:F2}");
     }
 
 }
