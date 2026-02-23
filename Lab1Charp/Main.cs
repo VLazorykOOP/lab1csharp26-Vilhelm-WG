@@ -5,7 +5,8 @@ while (true)
 {
     Console.WriteLine();
     Console.WriteLine("Lab 1 - меню");
-    Console.WriteLine("4 - Task 4 (масті)");
+    Console.WriteLine("5 - Task 5 (Добуток цілих чисел)");
+    Console.WriteLine("4 - Task 4 (Масті)");
     Console.WriteLine("3 - Task 3 (перевірка належності точки)");
     Console.WriteLine("2 - Task 2 (перевірка парності)");
     Console.WriteLine("1 - Task 1 (відстань між точками)");
@@ -18,6 +19,10 @@ while (true)
 
     switch (choice)
     {
+        case "5":
+            Task_5.Run();
+            break;
+        
         case "4":
             Task_4.Run();
             break;
